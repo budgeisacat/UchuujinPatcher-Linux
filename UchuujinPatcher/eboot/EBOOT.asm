@@ -302,4 +302,41 @@ Lab2:
 	.dh 48	//.dh 44           //Others
 
 //CGS 2892_03 info end
+
+//CGS 2893_02? 2984_02? info
+
+.org 0x08944BB8 // playtime W-H 1ff
+   .dh 50, 14, 50, 14
+   
+.org 0x08946A68 // cur stage origin 200
+   .dh 107, 287
+.org 0x08944BC0 // cur stage w-h
+   .dh 84, 16, 84, 16
+   
+.org 0x08946A6C // time origin 201
+   .dh 83, 216
+.org 0x08944BC8 // time w-h
+   .dh 33, 14, 33, 14
+ 
+.org 0x08946A70 // losses origin
+	.dh 0, 231
+.org 0x08944BD0 // losses w-h 202
+   .dh 69, 13, 69, 13
+.org 0x08948C2C // losses xy 
+	.dh 12, 0x27
+	
+.org 0x08946A74 // cards origin 203 
+   .dh 69, 231
+.org 0x08944BD8 // cards w-h
+   .dh 35, 13, 35, 13
+.org 0x08948C30 // cards xy
+	.dh 0x54, 0x27
+
+.org 0x08946A78 // rating origin 204
+   .dh 172, 216
+.org 0x08944BE0 // rating w-h
+   .dh 48, 17, 48, 17
+
+//CGS 2893_02? 2984_02? info end 
+
 .close
