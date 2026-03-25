@@ -1010,7 +1010,7 @@ def cgs_insert():
         for pal, pix in zip(info["content"]["pallete"], info["content"]["pixel"]):
             try:
                 os.system(
-                    "wine bin/GimConv/GimConv.exe work/isofiles/cgs_translated/{0}_{1:02d}.png -o \"{2}/work/isofiles/temp.gim\" {3}".format(
+                    "bin\\GimConv\\GimConv.exe work/isofiles/cgs_translated/{0}_{1:02d}.png -o {2}/work/isofiles/temp.gim {3}".format(
                         union_index, pixel_index, cwd, pix["format"]))
                 gim = open("work/isofiles/temp.gim".format(union_index, pixel_index), 'rb')
             except:

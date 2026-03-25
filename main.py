@@ -62,18 +62,14 @@ UchuujinPatcher.adjust_width_font.adjust_width_font()
 
 # multiprocessing scripts must launch on their own to function properly
 # launching as a function will cause main.py to run constantly
-os.system("python3 UchuujinPatcher/patch_sc.py")
+os.system("py UchuujinPatcher/patch_sc.py")
 # old way
 # import UchuujinPatcher.patch_sc
 # UchuujinPatcher.patch_sc.patch_sc()
 
-print("cpk pack")
 UchuujinPatcher.cpk_pack.cpk_pack_sc()
-print("cgs insert")
 UchuujinPatcher.union.union_cgs_insert.cgs_insert()
-print("union pack")
 UchuujinPatcher.union_pack.cpk_pack_union()
-print("pr pack")
 UchuujinPatcher.pr_pack.pr_pack()
 
 # inserting iso files

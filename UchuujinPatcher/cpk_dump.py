@@ -27,15 +27,14 @@ def cpk_dump():
     # Must execute in same dir as well
     cwd = os.getcwd()
     os.chdir("work/isofiles/sc")
-    print("problem is here dipshit")
-    os.system("wine CriPakTools.exe sc.cpk ALL")
+    os.system("CriPakTools.exe sc.cpk ALL")
 
     # Delete tools
     os.remove("CriPakTools.exe")
     os.remove("sc.cpk")
 
     # Go back to root dir
-    print(cwd)
+    # print(cwd)
     os.chdir(cwd)
 
 

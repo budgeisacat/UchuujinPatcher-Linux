@@ -76,9 +76,8 @@ def cgs_extract():
             gim.write(pallete)
             gim.flush()
             gim.close()
-            print("wine bin/GimConv/GimConv.exe work/isofiles/temp.gim -o \"{2}/work/isofiles/cgs/{0}_{1:02d}.png\"".format(union_index, pixel_index, cwd))
             os.system(
-                "wine bin/GimConv/GimConv.exe work/isofiles/temp.gim -o \"{2}/work/isofiles/cgs/{0}_{1:02d}.png\"".format(
+                "bin\\GimConv\\GimConv.exe work/isofiles/temp.gim -o {2}/work/isofiles/cgs/{0}_{1:02d}.png".format(
                     union_index, pixel_index, cwd))
             os.remove("work/isofiles/temp.gim")
             pixel_index += 1

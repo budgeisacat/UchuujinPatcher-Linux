@@ -12,7 +12,6 @@ from PIL import Image
 from os.path import basename, splitext
 
 def insert_png(png):
-    print("this is probably whats wrong")
     print(png)
     png_img = Image.open(png)
     png_name = splitext(png)[0]
