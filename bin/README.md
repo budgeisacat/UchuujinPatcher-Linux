@@ -1,12 +1,12 @@
-CriPakTools.exe originates from [esperknight's GitHub repo.](https://github.com/esperknight/CriPakTools) CriPakTools has no license.
+criPakTools.exe originates from [esperknight's GitHub repo.](https://github.com/esperknight/CriPakTools) CriPakTools has no license.
 
 UMDReplaceK originates from [SpudManTwo on GitHub](https://github.com/SpudManTwo/UMDReplaceK). UMDReplaceK is released under the GPLv3 license.
 
 Deceboot originates from [this page on ROMhacking.net](https://www.romhacking.net/utilities/1225/). Deceboot is released under the GPLv2 license.
 
-Armips originates from [buildbot.orphis.net](https://buildbot.orphis.net/armips/). Armips is released under the MIT license.
+Armips originates from [Kingcom on Github](https://github.com/Kingcom/armips). Armips is released under the MIT license.
 
-xdelta3.exe originates from [this page on GitHub](https://github.com/jmacd/xdelta-gpl). xdelta is licenced under the GPL license.
+xdelta3 originates from [this page on GitHub](https://github.com/jmacd/xdelta). xdelta3 is licenced under the Apache Public License version 2.0.
 
 DeltaPatcher originates from [this page on GitHub](https://github.com/marco-calautti/DeltaPatcher). DeltaPatcher is released under the GPLv2 license.
 
