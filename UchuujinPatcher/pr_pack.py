@@ -140,7 +140,7 @@ def cgs_pack():
        
         if os.path.exists("work/isofiles/pr_cgs_translated/{0:02d}.png".format(id_pixel)):
             
-            os.system("bin\\GimConv\\GimConv.exe work/isofiles/pr_cgs_translated/{1:02d}.png -o {0}/work/isofiles/temp{3}.gim -pspindex{2}".format(cwd, id_pixel,form,id_pixel))
+            os.system("wine bin/GimConv/GimConv.exe work/isofiles/pr_cgs_translated/{1:02d}.png -o \"{0}/work/isofiles/temp{3}.gim\" -pspindex{2}".format(cwd, id_pixel,form,id_pixel))
             gim = open("work/isofiles/temp{0}.gim".format(id_pixel), 'rb')
             gim.seek(0x44)
             gim_format = struct.unpack("H", gim.read(2))[0]

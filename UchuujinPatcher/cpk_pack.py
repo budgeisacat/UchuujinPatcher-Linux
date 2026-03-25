@@ -7,7 +7,7 @@ from shutil import copyfile, rmtree
 
 
 def cpk_pack_sc():
-    os.system("bin\\crifilesystem\\cpkmakec.exe work/isofiles/sc_patched -mode=ID -mask work/isofiles/new_sc.cpk")
+    os.system("wine bin/crifilesystem/cpkmakec.exe work/isofiles/sc_patched -mode=ID -mask work/isofiles/new_sc.cpk")
     #sc_dir = "sc_patched/"
     #scripts = "weblate_scripts/"
     #

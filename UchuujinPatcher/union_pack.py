@@ -13,13 +13,13 @@ def cpk_pack_union():
     id = 0
     for filename in os.listdir(union_dir):
         if filename in patched:
-            csv.write("work\\isofiles\\union_patched\\{0},,{1},Uncompress\n".format(filename,id))
+            csv.write("work/isofiles/union_patched/{0},,{1},Uncompress\n".format(filename,id))
         else:
-            csv.write("work\\isofiles\\union\\{0},,{1},Uncompress\n".format(filename,id))
+            csv.write("work/isofiles/union/{0},,{1},Uncompress\n".format(filename,id))
         id+=1
     csv.flush()
     csv.close()
-    os.system("bin\\crifilesystem\\cpkmakec.exe work/isofiles/union.csv -mode=ID -mask work/isofiles/new_union.cpk")
+    os.system("wine bin/crifilesystem/cpkmakec.exe work/isofiles/union.csv -mode=ID -mask work/isofiles/new_union.cpk")
 
     #sc_dir = "union_patched/"
     #scripts = "weblate_scripts/"

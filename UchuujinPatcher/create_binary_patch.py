@@ -46,7 +46,7 @@ def create_binary_patch():
 
     # Create xdelta patch
     print("Creating patch file...")
-    os.system(f"bin\\xdelta3-3.0.11-x86_64.exe -e -s \"{originalIso}\" {patchedIso} {patchFile}")
+    os.system(f"wine bin/xdelta3-3.0.11-x86_64.exe -e -s \"{originalIso}\" {patchedIso} {patchFile}")
     
     
     # create md5 file

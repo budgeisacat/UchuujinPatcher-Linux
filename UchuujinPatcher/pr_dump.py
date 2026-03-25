@@ -142,7 +142,7 @@ def cgs_dump():
         gim.write(pallete)
         gim.flush()
         gim.close()
-        os.system("bin\\GimConv\\GimConv.exe work/isofiles/temp.gim -o {0}/work/isofiles/pr_cgs/{1:02d}.png".format(cwd,id_pixel))
+        os.system("wine ./bin/GimConv/GimConv.exe work/isofiles/temp.gim -o \"{0}/work/isofiles/pr_cgs/{1:02d}.png\"".format(cwd,id_pixel))
         os.remove("work/isofiles/temp.gim")
 def decompress(buff):
     com = io.BytesIO(buff)

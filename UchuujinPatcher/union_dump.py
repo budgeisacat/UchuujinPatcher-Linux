@@ -23,7 +23,7 @@ def union_dump():
     # Must execute in same dir as well
     cwd = os.getcwd()
     os.chdir("work/isofiles/union")
-    os.system("CriPakTools.exe union.cpk ALL")
+    os.system("wine CriPakTools.exe union.cpk ALL")
 
     # Delete tools
     os.remove("CriPakTools.exe")
